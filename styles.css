@@ -189,6 +189,19 @@ body, h1, h2, p, ul, li {
             cursor: pointer;
         }
         
+        .review-box {
+            background-color: #f5f5f5; /* Background color for the comment box */
+            padding: 20px; /* Add space around the comment */
+            margin-bottom: 20px; /* Add space between comments */
+            border: 1px solid #ddd; /* Add a border for the comment box */
+            border-radius: 5px; /* Rounded corners for the comment box */
+        }
+
+        .review {
+            font-size: 16px; /* Adjust the font size for the review text */
+            margin: 0; /* Remove default margin to align text properly */
+        }
+        
      /* Add styles for the container */
     .info-container {
         display: flex;
