@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>Windy City Wonders - Chicago Tour Guide</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Windy City Wonders</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#highlights">Booking</a></li>
+                <li class="dropdown">
+                    <a href="#">Chicago Highlights</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#tour1">Photo Gallery</a></li>
+                        <li><a href="#tour2">Chicago's Blog</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="/img/chicago_head_banner.jpeg" alt="Chicago Skyline">
+        <div class="hero-content">
+            <h1>Gallery</h1>
+            <p>----------------------------------------</p>
+            <!-- Featured tours, photo, and reviews can be added here -->
+        </div>
+    </section>
+    <br> <br> 
+    
+     
+        <div class="gallery-container">
+            <div class="gallery-item" onclick="openModal('img/home/img01.jpeg')">
+                <img src="img/home/img01.jpeg" alt="Chicago Gallery 1">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img02.jpeg')">
+                <img src="img/home/img02.jpeg" alt="Chicago Gallery 2">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img03.jpeg')">
+                <img src="img/home/img03.jpeg" alt="Chicago Gallery 3">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img04.jpeg')">
+                <img src="img/home/img04.jpeg" alt="Chicago Gallery 4">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img05.jpeg')">
+                <img src="img/home/img05.jpeg" alt="Chicago Gallery 5">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img06.jpeg')">
+                <img src="img/home/img06.jpeg" alt="Chicago Gallery 6">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img07.jpeg')">
+                <img src="img/home/img07.jpeg" alt="Chicago Gallery 7">
+            </div>
+            <div class="gallery-item" onclick="openModal('img/home/img08.jpeg')">
+                <img src="img/home/img08.jpeg" alt="Chicago Gallery 8">
+            </div>
+        </div>
+    
+    <script>
+        // JavaScript functions for the image pop-up
+        function openModal(imageSrc) {
+            const modal = document.getElementById('myModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+    </script>
+    
+    
+     <footer>
+        <p>&copy; 2023 Windy City Wonders</p>
+    </footer>
+</body>
+</html>

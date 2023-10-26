@@ -1,0 +1,255 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+        position: relative;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #ff6600;
+    }
+
+/* Style for the dropdown menu */
+    .dropdown .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: gray;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        z-index: 1;
+    }
+
+    .dropdown-menu li {
+        border-bottom: 1px solid #ccc;
+        list-style: none;
+        overflow: hidden; /* Ensure that long content does not overflow */
+        white-space: nowrap; /* Prevent text from wrapping */
+        text-overflow: ellipsis; /* Display ellipsis for overflowed text */
+        padding: 10px;
+    }
+
+    .dropdown-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #ff6600;
+        color: #fff;
+    }
+
+
+/* Styles for the homepage hero section */
+    .hero {
+        position: relative;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    #gallery {
+        text-align: center;
+        background-color: #fff;
+        padding: 40px;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .gallery-slide {
+        max-width: 500px;
+        height: auto;
+        transition: opacity 0.3s ease;
+    }
+    
+    body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery-item {
+            flex: 1 0 calc(33.333% - 10px);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Modal (pop-up) styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1;
+            overflow: auto;
+        }
+
+        .modal-content {
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin: 10% auto;
+        }
+
+        .modal img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+     /* Add styles for the container */
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    /* Add styles for the three-column layout */
+    .info-section {
+        flex: 0 0 calc(30% - 20px); /* Adjust the width as needed */
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+    }
+
+    .info-section:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Additional styles for text and headings (same as previous example) */
+    .info-section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+        line-height: 1.4;
+        color: #333;
+    }
+    
+   .image-container {
+    text-align: center; /* Center-align the content horizontally */
+    }
+
+    .featured-image {
+        width: 60%;
+        height: auto; /* Automatically adjusts the height to maintain the aspect ratio */
+        display: block; /* Ensure that the image is treated as a block element */
+        margin: 0 auto; /* Center-align horizontally within the parent container */
+    }
+
+    /* Media query for responsiveness (adjust as needed) */
+    @media (max-width: 768px) {
+        .info-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .info-section {
+            width: 100%; /* Full width on smaller screens */
+            margin-bottom: 20px;
+        }
+    }
+
+/* ... (styles for other sections) */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
