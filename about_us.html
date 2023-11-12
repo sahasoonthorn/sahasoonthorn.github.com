@@ -1,52 +1,92 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Windy City Wonders - Chicago Tour Guide</title>
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutus.css"> <!-- Link to the new about us specific stylesheet -->
+    <title>Windy City Wonders - Chicago Tour Guide</title>
+</head>
+<body>
     <div class="main-container">
-        <body>
-            <header>
-                <nav>
-                    <div class="logo">Windy City Wonders</div>
-                    <ul>
-                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about_us.html">About Us</a></li>
-                        <li><a href="booking.html">Booking</a></li>
-                        <li class="dropdown">
-                            <a href="#">Chicago Highlights</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="gallery.html">Photo Gallery</a></li>
-                                <li><a href="blog.html">Chicago's Blog</a></li>
+        <header>
+            <nav>
+                <div class="logo">Windy City Wonders</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html" class="active">About Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li class="dropdown">
+                        <a href="#">Chicago Highlights</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gallery.html">Photo Gallery</a></li>
+                            <li><a href="blog.html">Chicago's Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <section id="home" class="hero">
-                <img src="/img/chicago_head_banner.jpeg" alt="Chicago Skyline">
-                <div class="hero-content">
-                    <h1>About Us</h1>
-                    <p>------------</p>
-                    
-                </div>
-            </section>
-            <br> <br> 
-            
-            <H1>Test about</h1>
-            <br> Anuchit Sahasoonthorn
-            <br> Valenteana
-            
-        </body>
+        <section class="hero">
+            <img src="/img/chicago_head_banner.jpeg" alt="Chicago Skyline">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <br>
+                <p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w2RHPBWj9K0?si=B0fbtKE-pmgH4ghL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </p>
+            </div>
+        </section>
         
-         <footer id="footer" class="footer">
-            <p>&copy; 2023 Windy City Wonders</p>
-        </footer>
+        <section class="aboutus-info-container">
+            <!-- About Us Info Sections -->
+            <!-- Each section content truncated for brevity -->
+            <p class="aboutus-intro"> 
+                As a close-knit group of four friends, we are all passionate about our city. Chicago offers so much and we are really proud of our lively, varied, and deeply historic city. 
+                Our common goal was to present Chicago as it truly is--not only as a tourist attraction but also as a location where residents and tourists can mingle and take in the spirit of the city.<br><br>
+                We established Windy City Wonders as we want others to view Chicago as we do! We have a strong love for selecting activities that venture beyond the usual tourist route. 
+                We cover everything, from the well-known sites to the hidden treasures that only locals are aware of. We hope that by showcasing Chicagoans' talents and stories, 
+                we can add significance to your stay and make it an unforgettable experience! Join us as we take you on a tour of the neighborhoods, landmarks, cuisine, and history that make up Chicago. <br> <br>
+                Windy City Wonders promises to provide inspiration, knowledge, and a genuine experience of the Windy City--whether you're planning your first vacation there or have lived in the city for years.
+             </p>
+        </section>>
+            <div class="aboutus-info-container">
+                <!-- Founder 1 -->
+                <div class="aboutus-info-section">
+                    <img src="/img/people_icon/icon_pp_2.png" alt="Anuchit Sahasoonthorn" class="profile-picture">
+                    <h2>Anuchit Sahasoonthorn</h2>
+                    <p>Founder and Chicago Enthusiast</p>
+                </div>
+
+                <!-- Founder 2 -->
+                <div class="aboutus-info-section">
+                    <img src="/img/people_icon/icon_pp_5.png" alt="Valenteana" class="profile-picture">
+                    <h2>Valenteana</h2>
+                    <p>Founder and Local Explorer</p>
+                </div>
+                
+                <!-- Founder 3 -->
+                <div class="aboutus-info-section">
+                    <img src="/img/people_icon/icon_pp_1.png" alt="Daniel Mercado" class="profile-picture">
+                    <h2>Daniel Mercado</h2>
+                    <p>Founder and Adventure Seeker</p>
+                </div>
+
+                <!-- Founder 4 -->
+                <div class="aboutus-info-section">
+                    <img src="/img/people_icon/icon_pp_7.png" alt="Luciana Ng" class="profile-picture">
+                    <h2>Luciana Ng</h2>
+                    <p>Founder and Food Enthusiast</p>
+                </div>
+             </div>
+        </section>
     </div>
+
+    <footer id="footer" class="footer">
+                    <p>&copy; 2023 Windy City Wonders</p><br>
+                    
+    </footer>
+</body>
 </html>
