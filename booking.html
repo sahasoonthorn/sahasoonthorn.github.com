@@ -3,6 +3,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <style>
+            .form-label {
+                font-weight: bold;
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            .form-input:required {
+                border-color: #ff0000;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                position: center;
+            }
+        </style>
+        
         <title>Windy City Wonders - Chicago Tour Guide</title>
     </head>
     
@@ -45,13 +73,13 @@
                     <h2><center>Basic Package</center></h2>
                     <p>
                         &nbsp;&nbsp;<center>Local History and Architecture Tour</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Downtown Tour</center>
-                        <br> <br> 
+                        <br>  
                         &nbsp;&nbsp;<center>Limited Local Restaurant Meal Vouchers</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Park Visit</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center><b>$99.99</b></center>
                     </p>
                 </section>
@@ -60,15 +88,15 @@
                     <h2><center>Premium Package</center></h2>
                     <p>
                         &nbsp;&nbsp;<center>Includes All Basic Package Items</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Skydeck Chicago</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Navy Pier Pass</center>
-                        <br> <br> 
+                        <br>
                         &nbsp;&nbsp;<center>Shoreline Sightseeing Architecture River Tour</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Adler Planetarium</center>
-                        <br> <br> 
+                        <br>
                         &nbsp;&nbsp;<center><b>$199.99</b></center>
                     </p>
                 </section>
@@ -77,22 +105,184 @@
                     <h2><center>VIP Package</center></h2>
                     <p>
                         &nbsp;&nbsp;<center>Includes All Basic Package Items</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Includes All Premium Package Items</center>
-                        <br> <br> 
+                        <br>
                         &nbsp;&nbsp;<center>Private Transportation Provided</center>
-                        <br> <br> 
+                        <br>
                         &nbsp;&nbsp;<center>Gourmet Restaurant Meal Vouchers</center>
-                        <br> <br> 
+                        <br> 
                         &nbsp;&nbsp;<center>Night Life City Package</center>
-                        <br> <br>
+                        <br>
                         &nbsp;&nbsp;<center>Penthouse Suite Provided</center>
-                        <br> <br>  
+                        <br>  
                         &nbsp;&nbsp;<center><b>$399.99</b></center>
                     </p>
                 </section>
             </div>
             
+            <br>
+            <br>
+            <section>
+      <h1>Payment Form</h1>
+      <form id="payment" action="http://www.example.com/sb/payment" method="post">
+<fieldset id="billing">
+  <legend>Billing Information (required)</legend>
+            <form>
+               <table>
+                    <tr>
+                        <td>
+                            <label class="form-label" for="firstBox">First Name</label><br>
+                            <input class="form-input" name="fName" id="firstBox" type="text" required /><br>
+
+                            <label class="form-label" for="lastBox">Last Name</label><br>
+                            <input class="form-input" name="lName" id="lastBox" type="text" required /><br>
+
+                            <label class="form-label" for="streetBox">Street Address</label><br>
+                            <input class="form-input" name="street" id="streetBox" type="text" required /><br>
+                        </td>
+                        <td>
+                            <label class="form-label" for="streetBox2">Street Address (2)</label><br>
+                            <input class="form-input" name="street2" id="streetBox2" type="text" /><br>
+
+                            <label class="form-label" for="cityBox">City</label><br>
+                            <input class="form-input" name="city" id="cityBox" type="text" required /><br>
+
+                            <label class="form-label" for="stateBox">State</label><br>
+                            <input class="form-input" name="state" id="stateBox" list="stateList" required /><br>
+                            <datalist id="stateList">
+                                <option value="AL" />
+                                <option value="AL" />
+                               <option value="AK" />
+                               <option value="AZ" />
+                               <option value="AR" />
+                               <option value="CA" />
+                               <option value="CO" />
+                               <option value="CT" />
+                               <option value="DE" />
+                               <option value="FL" />
+                               <option value="GA" />
+                               <option value="HI" />
+                               <option value="ID" />
+                               <option value="IL" />
+                               <option value="IN" />
+                               <option value="IA" />
+                               <option value="KS" />
+                               <option value="KY" />
+                               <option value="LA" />
+                               <option value="ME" />
+                               <option value="MD" />
+                               <option value="MA" />
+                               <option value="MI" />
+                               <option value="MN" />
+                               <option value="MS" />
+                               <option value="MO" />
+                               <option value="MT" />
+                               <option value="NE" />
+                               <option value="NV" />
+                               <option value="NH" />
+                               <option value="NJ" />
+                               <option value="NM" />
+                               <option value="NY" />
+                               <option value="NC" />
+                               <option value="ND" />
+                               <option value="OH" />
+                               <option value="OK" />
+                               <option value="OR" />
+                               <option value="PA" />
+                               <option value="RI" />
+                               <option value="SC" />
+                               <option value="SD" />
+                               <option value="TN" />
+                               <option value="TX" />
+                               <option value="UT" />
+                               <option value="VT" />
+                               <option value="VA" />
+                               <option value="WA" />
+                               <option value="WV" />
+                               <option value="WI" />
+                               <option value="WY" />
+                            </datalist>
+                        </td>
+                        <td>
+                            <label class="form-label" for="zipBox">ZIP/Postal Code</label><br>
+                            <input class="form-input" name="zip" id="zipBox" type="text" pattern="^\d{5}(\-\d{4})?$" /><br>
+
+                            <label class="form-label" for="countryBox">Country</label><br>
+                            <input class="form-input" name="country" id="countryBox" type="text" required value="United States" /><br>
+
+                            <label class="form-label" for="phoneBox">Phone</label><br>
+                            <input class="form-input" name="phone" id="phoneBox" type="tel" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" /><br>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+</fieldset>
+          <br>
+         <fieldset id="creditCard">
+            <legend>Credit Card (required)</legend>
+            <fieldset>
+                <label for="stateBox">Select the Package :</label><br>
+            &nbsp;&nbsp;<input class="form-input" name="plan_option" id="stateBox" list="optionList" style="width: 250px;" required /><br>
+            <datalist id="optionList">
+                <option value="Basic Package $99.99" />
+                <option value="Premium Package $199.99" />
+                <option value="VIP Package $399.99" />
+            </datalist>
+                <br>
+               <label class="cardLabel">
+                  <input name="cCard" value="amex" type="radio" required />
+                  <img src="/img/payment_icon/amex_icon.png" alt="American Express" />
+               </label>
+               <label class="cardLabel">
+                  <input name="cCard" value="discover" type="radio" required />
+                  <img src="/img/payment_icon/discover_icon.png" alt="Discover" />
+               </label>
+               <label class="cardLabel">
+                  <input name="cCard" value="master" type="radio" required />
+                  <img src="/img/payment_icon/master_icon.png" alt="MasterCard" />
+               </label>
+               <label class="cardLabel">
+                  <input name="cCard" value="visa" type="radio" required />
+                  <img src="/img/payment_icon/visa_icon.png" alt="Visa" />
+               </label>
+                <br>
+            </fieldset>
+            <br>
+            <label for="cardBox">Credit Card Number</label>
+            <input class="form-input" name="cardNumber" id="cardBox" type="text" style="width: 300px;" required
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
+            <label for="monthList">Expiration Date</label>
+            <select class="form-input" name="cardMonth" id="monthList" style="width: 150px;" required>
+               <option value="">--Month--</option>
+               <option value="01">January (01)</option>
+               <option value="02">February (02)</option>
+               <option value="03">March (03)</option>
+               <option value="04">April (04)</option>
+               <option value="05">May (05)</option>
+               <option value="06">June (06)</option>
+               <option value="07">July (07)</option>
+               <option value="08">August (08)</option>
+               <option value="09">September (09)</option>
+               <option value="10">October (10)</option>
+               <option value="11">November (11)</option>
+               <option value="12">December (12)</option>
+            </select>
+            <select class="form-input" name="cardYear" id="yearList" style="width: 100px;" required>
+               <option value="">--Year--</option>
+               <option value="2017">2017</option>
+               <option value="2018">2018</option>
+               <option value="2019">2019</option>
+               <option value="2020">2020</option>
+               <option value="2021">2021</option>
+            </select>
+            <label for="cscBox">CSC</label>
+            <input class="form-input" name="csc" id="cscBox" type="text" style="width: 80px;" pattern="^\d{3}$" maxlength="3" placeholder="xxx" required />
+            &nbsp;&nbsp;&nbsp;&nbsp;<button type="submit">Submit Payment</button>
+         </fieldset>
+          
+      </form>
             <!--end code here-->
         </body>
         
