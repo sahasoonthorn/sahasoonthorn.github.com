@@ -4,6 +4,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Windy City Wonders - Chicago Tour Guide</title>
+        <style>
+        /* Add some basic styling to make it visually appealing */
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            background-color: #F1F1F1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #F9F9F9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            
+        }ul.b{
+            list-style-type: square;
+            text-indent: 50px;
+            list-style-position: inside;
+        }
+    </style>
     </head>
     
     <div class="main-container">
@@ -32,14 +60,79 @@
             <section id="home" class="hero">
                 <img src="/img/chicago_head_banner.jpeg" alt="Chicago Skyline">
                 <div class="hero-content">
-                    <h1>Template</h1>
-                    <p>------------</p>
+                    <h1>FAQ</h1>
+                    <p>Welcome to our Frequently Asked Questions (FAQ) page, where we aim to provide answers to the most common queries and concerns you may have about our products/services. </p>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xn9gzG_qQoQ?si=drdLqqUWbPPyZSjn&autoplay=1&loop=1&controls=0&mute=1&start=52" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                
+                    </iframe>
                     
                 </div>
             </section>
             <br> <br> 
             <!--Start Code here-->
             
+
+                      <center><h1>Chicago Tourism FAQ</h1></center>
+                    <div class="question" onclick="toggleAnswer('q1')">What are some popular tourist attractions in Chicago?</div>
+                    <div id="q1" class="answer">
+                        <ul class="b">
+                            <li>Millennium Park (home to "The Bean" sculpture)</li>
+                            <li>Navy Pier</li>
+                            <li>The Art Institute of Chicago</li>
+                            <li>Willis Tower Skydeck</li>
+                            <li>Shedd Aquarium</li>
+                            <li>Field Museum</li>
+                            <li>Museum of Science and Industry</li>
+                            <li>Chicago Riverwalk</li>
+                        </ul>
+                    </div>
+                    <div class="question" onclick="toggleAnswer('q2')">How's the transportation system in Chicago?</div>
+                    <div id="q2" class="answer">
+                        <ul class="b">
+                            <li>Chicago has an extensive public transportation system, including buses and the 'L' train system.</li>
+                            <li>Taxis and rideshare services are also readily available.</li>
+                            <li>The city is relatively walkable, especially in the downtown area.</li>
+                        </ul>
+                    </div>
+                    <div class="question" onclick="toggleAnswer('q3')">What is the best time to visit Chicago?</div>
+                    <div id="q3" class="answer">
+                        <ul class="b">
+                            <li>The summer months (June to August) are popular for tourism, as the weather is generally warm.</li>
+                            <li>Spring (April to May) and fall (September to October) are also pleasant times to visit.</li>
+                        </ul>
+                    </div>
+                    <div class="question" onclick="toggleAnswer('q4')">What about Chicago's food scene?</div>
+                    <div id="q4" class="answer">
+                        <ul class="b">
+                            <li>Chicago is known for its deep-dish pizza, Chicago-style hot dogs, and diverse culinary scene.</li>
+                            <li>The city has a rich culinary culture with a wide range of restaurants offering various cuisines.</li>
+                        </ul>
+                    </div>
+                    <div class="question" onclick="toggleAnswer('q5')">Are there any annual events or festivals?</div>
+                    <div id="q5" class="answer">
+                        <ul class="b">
+                            <li>The Taste of Chicago is a popular food festival held in July.</li>
+                            <li>Lollapalooza, a major music festival, takes place in Grant Park.</li>
+                            <li>The Chicago Air and Water Show is a spectacular event held along Lake Michigan.</li>
+                        </ul>
+                    </div>
+                    <!-- Add more questions and answers as needed -->
+                    <script>
+                        function toggleAnswer(questionId) {
+                            var answer = document.getElementById(questionId);
+                            if (answer.style.display === "none") {
+                                answer.style.display = "block";
+                            } else {
+                                answer.style.display = "none";
+                            }
+                        }
+                    </script>
+                
+           
             
             <!--end code here-->
         </body>
