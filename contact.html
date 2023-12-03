@@ -2,7 +2,48 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="aboutus.css">
         <link rel="stylesheet" href="styles.css">
+            <style>
+                
+                
+                .contact-info {
+                    margin-top: 20px;
+                }
+                .contact-info p {
+                    margin-bottom: 10px;
+                }
+                .contact-form {
+                    margin-top: 0px;
+                }
+                input {
+                    width: 40%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                textarea{
+                    width: 70%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                button {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: #45a049;
+                }
+            </style>
         <title>Windy City Wonders - Chicago Tour Guide</title>
     </head>
     
@@ -32,14 +73,42 @@
             <section id="home" class="hero">
                 <img src="/img/chicago_head_banner.jpeg" alt="Chicago Skyline">
                 <div class="hero-content">
-                    <h1>Template</h1>
-                    <p>------------</p>
+                    <h1>Contact Us</h1><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qGkenJtoyEM?si=5zj8vLpeju-pQIEd&autoplay=1&loop=1&controls=0&mute=1&start=05" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                
+                    </iframe>
                     
                 </div>
             </section>
             <br> <br> 
             <!--Start Code here-->
-            
+            <center>
+                <h1>Contact Us - Chicago Tourism</h1><br>
+                 <p class="aboutus-intro"> 
+                    Whether you have questions about Chicago's attractions, need travel recommendations, or want assistance planning your visit, we're here to help! Reach out to us through the provided contact information or use the form below.
+                 </p>
+            </center>
+                <div class="contact-info">
+                    <h2>Contact Information</h2><br>
+                    <p><strong>Phone:</strong> <a href="tel:312-978-9899">312-978-9899</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:WindyCityWonders@gmail.com">WindyCityWonders@gmail.com</a></p>
+                </div>
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <br>
+                    <form action="#" method="post">
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Your Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="message">Your Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             
             <!--end code here-->
         </body>

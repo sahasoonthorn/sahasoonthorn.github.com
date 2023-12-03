@@ -11,13 +11,13 @@
             .form-input {
                 width: 100%;
                 padding: 8px;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
                 border: 1px solid #ccc;
                 border-radius: 4px;
             }
 
             .form-input:required {
-                border-color: #ff0000;
+                border-color: #fff;
             }
             table {
                 width: 100%;
@@ -28,6 +28,18 @@
                 border: 1px solid #ccc;
                 padding: 8px;
                 position: center;
+            }
+
+            button {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
             }
         </style>
         
@@ -134,7 +146,7 @@
       <form id="payment" action="http://www.example.com/sb/payment" method="post">
 <fieldset id="billing">
   <legend>Billing Information (required)</legend>
-            <form>
+            <form action="#" method="post">
                <table>
                     <tr>
                         <td>
@@ -229,7 +241,7 @@
          <fieldset id="creditCard">
             <legend>Credit Card (required)</legend>
             <fieldset>
-                <label for="stateBox">Select the Package :</label><br>
+                <label for="stateBox">Select the Package :</label><br><br>
             &nbsp;&nbsp;<input class="form-input" name="plan_option" id="stateBox" list="optionList" style="width: 250px;" required /><br>
             <datalist id="optionList">
                 <option value="Basic Package $99.99" />
